@@ -1,16 +1,18 @@
-#include <stdio.h>  
+#include <stdio.h>
+int main()
+{
+    int angka;
+    printf("Masukkan sebuah angka: ");
+    scanf("%d", &angka);
 
-int main(){
-    int i, n;
-    printf ("contoh perulagan \n");
-    printf ("masukkan nilai n: ");
-    scanf ("%d", &n);   
-
-    for (i=1; i <= 10; i++){
-        for (int n=1; n <=10; n++ ){  
-            printf ("%3d ", i*n);    
+    if (angka % 2 == 0)
+    {
+        printf("Angka %d adalah genap.\n", angka);
     }
-    
-    printf ("\n"); }
-    
+    else
+    {
+        printf("Angka %d adalah ganjil.\n", angka);
+    }
+
+    return 0;
 }
