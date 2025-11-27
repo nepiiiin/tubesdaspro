@@ -13,6 +13,6 @@ int main()
     {
         printf("Angka %d adalah ganjil.\n", angka);
     }
-
+    
     return 0;
 }
