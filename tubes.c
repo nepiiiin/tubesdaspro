@@ -11,6 +11,40 @@ struct Mahasiswa {
     int jumlahMK;
     struct MataKuliah mk[20];
 };
+//  buat fungsi untuk menentukan grade berdasarkan rata-rata nilai
+const char * grade (float rata){
+     if (rata >= 80)
+        return "A";
+    else if (rata >= 75)
+        return "B+";
+    else if (rata >= 70)
+        return "B";
+    else if (rata >= 65)
+        return "C+";
+    else if (rata >= 60)
+        return "C";
+    else if (rata >= 50)
+        return "D";
+    else
+        return "E";
+}
+// buat fungsi untuk menentukan ipk berdasarkan rata-rata nilai
+float getBobotGrade(float rata) {
+    if (rata >= 80)
+        return 4.00;
+    else if (rata >= 75)
+        return 3.50;
+    else if (rata >= 70)
+        return 3.00;
+    else if (rata >= 65)
+        return 2.50;
+    else if (rata >= 60)
+        return 2.00;
+    else if (rata >= 50)
+        return 1.00;
+    else
+        return 0.00;
+}
 
 int main() {
     struct Mahasiswa mhs;
@@ -56,6 +90,8 @@ int main() {
     }
 
     printf("\nRata-rata Nilai: %.2f\n", rata);
+    printf("Grade: %s\n", grade(rata));
+    printf("IPK: %.2f\n", getBobotGrade(rata));
 
     return 0;
 }
