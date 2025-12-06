@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-#define RED     "\033[41m"
-#define GREEN   "\033[42m"
+// warna teks
+#define RED "\033[31m"
+#define GREEN "\033[32m"
+#define RESET "\033[0m"
 
 struct MataKuliah
 {
@@ -113,9 +115,9 @@ int main()
 
     printf("Status: ");
     if (rata >= 60)
-        printf(GREEN "Lulus\n");
+        printf(GREEN "Lulus\n" RESET);
     else
-        printf(RED "Tidak Lulus\n");
+        printf(RED "Tidak Lulus\n" RESET);
 
     return 0;
 }
