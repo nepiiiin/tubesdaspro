@@ -93,5 +93,11 @@ int main() {
     printf("Grade: %s\n", grade(rata));
     printf("IPK: %.2f\n", getBobotGrade(rata));
 
+    printf("Status: ");
+    if (rata >= 60)
+        printf("Lulus\n");
+    else
+        printf("Tidak Lulus\n");
+
     return 0;
 }
