@@ -66,7 +66,7 @@ int main()
     int i;
     float total = 0, rata;
 
-    printf("=== Input Data Mahasiswa ===\n");
+    printf("\n=== Input Data Mahasiswa ===\n");
 
     printf("Masukkan Nama Mahasiswa : ");
     fgets(mhs.nama, sizeof(mhs.nama), stdin);
